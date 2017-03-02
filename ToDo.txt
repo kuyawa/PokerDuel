@@ -17,3 +17,11 @@ VERSION 2
 
 git remote heroku to https://git.heroku.com/pokerduel.git
 
+Files needed locally:
+  .swift:version << 3.0.2
+  Procfile << web: .build/release/pokerduel
+
+On Heroku Dashboard/Settings
+  add buildpack: https://github.com/kylef/heroku-buildpack-swift
+  
+  
