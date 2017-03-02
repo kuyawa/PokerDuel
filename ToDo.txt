@@ -1,0 +1,19 @@
+TODO:
+
+- Learn Kitura
+- Main page a huge hero
+- Button to GO PLAY
+- Show playing tables
+- New Table or seat on open table
+- Chat rooms
+- Fake money, $1000 to start
+
+
+VERSION 2
+- Buy money with bitcoin
+
+
+----
+
+git remote heroku to https://git.heroku.com/pokerduel.git
+

@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>PokerDuel</title>
+    <link rel="stylesheet" type="text/css" href="/public/styles/default-theme.css">
+</head>
+<body>
+	<h1>Hello test!</h1>
+	<h2>Test: <a href="/">{{ test }}</a></h2>
+	<h2>Test: {{ test | time }}</h2>
+</body>
+</html>

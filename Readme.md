@@ -1,0 +1,3 @@
+# PokerDuel - Texas Hold'em in Kitura
+
+Lorem ipsum...
