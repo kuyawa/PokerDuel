@@ -6,18 +6,18 @@ This are the steps to have any web page up and running with Kitura on Heroku:
 
 * Get a Heroku account
 * Go to the dashboard (after login, go to dashboard.heroku.com)
-* Create an app, give it a nice name like PokerFight or whatever
+* Create an app, give it a nice name like "pokerfight" or whatever
 * We will use that name for everything so be sure to change it accordignly everywhere down this list
 * Download the CLI (Heroku's Command Line Interface to do some stuff in terminal)
 * Now open terminal in your PC and let's start the fun
 * Clone this repo like:
-* $ git clone https://github.com/kuyawa/PokerDuel.git PokerFight
-* Pay attention to the last part of the cloning, that's the name of your new folder 
-* Modify the Procfile to have this `web: PokerFight`
+* $ git clone https://github.com/kuyawa/PokerDuel.git pokerfight
+* Pay attention to the last part of the cloning, that's the name of your new app and folder 
+* Modify the Procfile to have this `web: pokerfight`
 * Now lets compile it all:
 * $ swift build
 * And test it:
-* $ .build/debug/PokerFight
+* $ .build/debug/pokerfight
 * If you go to your browser it should run in localserver:8090
 * $ CTRL+C to stop the app
 * Now let's add everything to github
@@ -28,7 +28,7 @@ This are the steps to have any web page up and running with Kitura on Heroku:
 * $ heroku login
 * $ Enter password
 * Ok, to Heroku it goes:
-* $ git remote heroku to https://git.heroku.com/PokerFight.git
+* $ git remote heroku to https://git.heroku.com/pokerfight.git
 * $ git push -u heroku master
 * Now it will push everything to Heroku and start compilation
 * Oops, we forgot the buildpack. 
