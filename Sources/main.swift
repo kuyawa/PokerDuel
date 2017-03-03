@@ -4,12 +4,7 @@ import HeliumLogger
 import KituraStencil
 import Foundation
 
-//typealias RouterNext = @escaping () -> Void
-
-print("\n----------\nRunning PokerDuel on Kitura dev...\n")
-
-HeliumLogger.use()
-//Log.logger = HeliumLogger()
+HeliumLogger.use(.warning)
 
 let router  = Router()
 let port    = Int(ProcessInfo.processInfo.environment["PORT"] ?? "8090") ?? 8090
@@ -19,8 +14,9 @@ router.setDefault(templateEngine: stencil)
 router.all("/public", middleware: StaticFileServer())
 
 // Routes
-router.get("/", handler: IndexHandler().index)
+router.get("/",      handler: IndexHandler().index)
 router.get("/index", handler: IndexHandler().index)
+router.get("/play",  handler: PlayHandler().show)
 router.get("/test",  handler: TestHandler().show)
 
 

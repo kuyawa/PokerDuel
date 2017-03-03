@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>PokerDuel</title>
+    <link rel="stylesheet" type="text/css" href="/public/styles/play.css">
+</head>
+<body>
+
+	<!-- Opponent's cards -->
+	<div class="opcard0"><img id="opspot0" src="/public/images/empty_green.png"></div>
+	<div class="opcard1"><img id="opspot1" src="/public/images/empty_green.png"></div>
+
+	<!-- Deck of cards -->
+	<div class="deck">
+		<img class="back0" src="/public/images/back_blue.png">
+		<img class="back1" src="/public/images/back_blue.png">
+		<img class="back2" src="/public/images/back_blue.png">
+		<img class="back3" src="/public/images/back_blue.png" id="decktop">
+	</div>
+
+	<!-- Common cards -->
+	<div class="card0"><img id="cospot0" src="/public/images/empty_green.png"></div>
+	<div class="card1"><img id="cospot1" src="/public/images/empty_green.png"></div>
+	<div class="card2"><img id="cospot2" src="/public/images/empty_green.png"></div>
+	<div class="card3"><img id="cospot3" src="/public/images/empty_green.png"></div>
+	<div class="card4"><img id="cospot4" src="/public/images/empty_green.png"></div>
+
+	<!-- Message board -->
+	<div id="status">
+		<li></li>
+		<p id="message">Wait for the dealer to shuffle the deck</p>
+	</div>
+
+	<!-- Message board -->
+	<div id="pot-board">
+		<li></li>
+		<p>Bet: <b><span id="bet">$0</span></b></p>
+		<p>Pot: <b><span id="pot">$0</span></b></p>
+	</div>
+
+	<!-- My cards -->
+	<div class="mycard0"><img id="myspot0" src="/public/images/empty_green.png"></div>
+	<div class="mycard1"><img id="myspot1" src="/public/images/empty_green.png"></div>
+
+	<!-- Turn token -->
+	<div id="token" class='token'><img src="/public/images/token.png"></div>
+
+	<!-- Opponent's chips -->
+	<div class="opchip-white"><img class="chip" src="/public/images/chip_white.png"></div>
+	<div class="opchip-blue" ><img class="chip" src="/public/images/chip_blue.png"></div>
+	<div class="opchip-green"><img class="chip" src="/public/images/chip_green.png"></div>
+	<div class="opchip-red"  ><img class="chip" src="/public/images/chip_red.png"></div>
+	<div class="opchip-black"><img class="chip" src="/public/images/chip_black.png"></div>
+
+	<!-- My stash of chips -->
+	<div class="mychip-white"><img class="chip" src="/public/images/chip_white.png"></div>
+	<div class="mychip-blue" ><img class="chip" src="/public/images/chip_blue.png"></div>
+	<div class="mychip-green"><img class="chip" src="/public/images/chip_green.png"></div>
+	<div class="mychip-red"  ><img class="chip" src="/public/images/chip_red.png"></div>
+	<div class="mychip-black"><img class="chip" src="/public/images/chip_black.png"></div>
+
+	<!-- Players tags -->
+	<div id="optag" class="tag"> <li></li> <p id="player1">Dillinger $9610</p> </div>
+	<div id="mytag" class="tag"> <li></li> <p id="player0">George $1450</p> </div>
+
+	<!-- My betting options -->
+	<div id="mymenu">
+		<li id="menu-option0"><a id="link-option0" href="#">Bet   </a></li>
+		<li id="menu-option1"><a id="link-option1" href="#">Check </a></li>
+		<li id="menu-option2"><a id="link-option2" href="#">All-In</a></li>
+		<li id="menu-option3"><a id="link-option3" href="#">Fold  </a></li>
+	</div>
+
+
+
+	<!-- Resources -->
+	<script src="/public/scripts/game.js"></script>
+	<script src="/public/scripts/winners.js"></script>
+
+	<!-- Cache all cards -->
+	<div style="display:none">
+
+		<img src="/public/images/c1.png">
+		<img src="/public/images/c2.png">
+		<img src="/public/images/c3.png">
+		<img src="/public/images/c4.png">
+		<img src="/public/images/c5.png">
+		<img src="/public/images/c6.png">
+		<img src="/public/images/c7.png">
+		<img src="/public/images/c8.png">
+		<img src="/public/images/c9.png">
+		<img src="/public/images/ca.png">
+		<img src="/public/images/cb.png">
+		<img src="/public/images/cc.png">
+		<img src="/public/images/cd.png">
+		<img src="/public/images/ce.png">
+
+		<img src="/public/images/d1.png">
+		<img src="/public/images/d2.png">
+		<img src="/public/images/d3.png">
+		<img src="/public/images/d4.png">
+		<img src="/public/images/d5.png">
+		<img src="/public/images/d6.png">
+		<img src="/public/images/d7.png">
+		<img src="/public/images/d8.png">
+		<img src="/public/images/d9.png">
+		<img src="/public/images/da.png">
+		<img src="/public/images/db.png">
+		<img src="/public/images/dc.png">
+		<img src="/public/images/dd.png">
+		<img src="/public/images/de.png">
+
+		<img src="/public/images/h1.png">
+		<img src="/public/images/h2.png">
+		<img src="/public/images/h3.png">
+		<img src="/public/images/h4.png">
+		<img src="/public/images/h5.png">
+		<img src="/public/images/h6.png">
+		<img src="/public/images/h7.png">
+		<img src="/public/images/h8.png">
+		<img src="/public/images/h9.png">
+		<img src="/public/images/ha.png">
+		<img src="/public/images/hb.png">
+		<img src="/public/images/hc.png">
+		<img src="/public/images/hd.png">
+		<img src="/public/images/he.png">
+
+		<img src="/public/images/s1.png">
+		<img src="/public/images/s2.png">
+		<img src="/public/images/s3.png">
+		<img src="/public/images/s4.png">
+		<img src="/public/images/s5.png">
+		<img src="/public/images/s6.png">
+		<img src="/public/images/s7.png">
+		<img src="/public/images/s8.png">
+		<img src="/public/images/s9.png">
+		<img src="/public/images/sa.png">
+		<img src="/public/images/sb.png">
+		<img src="/public/images/sc.png">
+		<img src="/public/images/sd.png">
+		<img src="/public/images/se.png">
+
+	</div>
+
+</body>
+</html>

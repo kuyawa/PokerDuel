@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 	<title>PokerDuel</title>
-    <link rel="stylesheet" type="text/css" href="/public/styles/default-theme.css">
+    <link rel="stylesheet" type="text/css" href="/public/styles/default.css">
 </head>
 <body>
 	<h1>Hello test!</h1>

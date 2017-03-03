@@ -1,0 +1,117 @@
+html{margin:0; padding:0; background:url(/public/images/bg_green.jpg);}
+body{height:100%; overflow:hidden; margin:0; padding:0;}
+
+
+.opcard0{position:absolute; top:-40px; left:400px; -webkit-transform:rotate( 5deg);}
+.opcard1{position:absolute; top:-40px; left:500px; -webkit-transform:rotate(-5deg);}
+
+.deck {position:absolute; top:180px; left:100px; }
+.back0{position:absolute; top:0px; left:0px; }
+.back1{position:absolute; top:2px; left:2px; }
+.back2{position:absolute; top:4px; left:4px; }
+.back3{position:absolute; top:6px; left:6px; -webkit-transform:rotate(-10deg);}
+
+.card0{position:absolute; top:180px; left:240px; }
+.card1{position:absolute; top:180px; left:350px; }
+.card2{position:absolute; top:180px; left:460px; }
+.card3{position:absolute; top:180px; left:570px; }
+.card4{position:absolute; top:180px; left:680px; }
+
+#status{position:absolute; top:330px; left:250px; width:520px; height:30px;}
+#status li{position:absolute; list-style:none; top:0px; left:0px; width:520px; height:30px; background:#333; border:3px solid #888; border-radius:6px; opacity:0.1;}
+#status p{margin:4px; color:#FFF; font-size:1.2em; text-align:center; opacity:0.6;}
+
+#pot-board{position:absolute; top:200px; left:860px; width:200px; height:100px;}
+#pot-board li{position:absolute; list-style:none; top:0px; left:0px; width:200px; height:100px; /*background:#333; border:3px solid #888; border-radius:6px; opacity:0.1;*/}
+#pot-board  p{margin:15px 20px; color:#FFF; font-size:1.2em; text-align:right; opacity:0.6;}
+#pot-board  p b{color:#FF8; font-size:1.3em;}
+
+.mycard0{position:absolute; top:402px; left:400px; -webkit-transform:rotate(-5deg);}
+.mycard1{position:absolute; top:402px; left:500px; -webkit-transform:rotate( 5deg);}
+
+#token {position:absolute; border:1px solid rgba(0,0,0,.3); border-radius:20px; box-shadow:2px 2px 2px rgba(0,0,0,.3); -webkit-transition: top 600ms ease-in-out, left 600ms ease-in-out;}
+.token {top:236px; left: 40px;}
+.token0{top:440px; left:320px;}
+.token1{top: 20px; left:320px;}
+
+.chip{width:40px; height:40px; border:1px solid rgba(0,0,0,.3); border-radius:20px; box-shadow:2px 2px 2px rgba(0,0,0,.3);}
+
+.opchip-white{position:absolute; top:60px; left:630px;}
+.opchip-red  {position:absolute; top:20px; left:654px;}
+.opchip-blue {position:absolute; top:60px; left:678px;}
+.opchip-black{position:absolute; top:20px; left:702px;}
+.opchip-green{position:absolute; top:60px; left:726px;}
+
+.mychip-white{position:absolute; top:420px; left:630px;}
+.mychip-red  {position:absolute; top:460px; left:654px;}
+.mychip-blue {position:absolute; top:420px; left:678px;}
+.mychip-black{position:absolute; top:460px; left:702px;}
+.mychip-green{position:absolute; top:420px; left:726px;}
+
+#optag{position:absolute; top: 20px; left:800px; width:260px; height:30px;}
+#mytag{position:absolute; top:460px; left:800px; width:260px; height:30px;}
+
+.tag{}
+.tag li{position:absolute; list-style:none; top:0px; left:0px; width:100%; height:100%; background:#333; border:3px solid #888; border-radius:6px; opacity:0.2;}
+.tag p{margin:4px 0; color:#FFF; font-size:1.2em; text-align:center; opacity:.6;}
+
+
+#mymenu{position:absolute; top:430px; left:800px;}
+#mymenu li{display:inline-block; list-style:none; width:60px; height:20px; margin-bottom:-2px; text-align:center; background:#333; border:2px solid #888; border-radius:6px; opacity:0.5;}
+#mymenu  a{display:inline-block; width:60px; height:20px; color:#FFF; font-size:1em; text-decoration:none; opacity:0.6;}
+#mymenu  a:visited{color:#FFF;}
+#mymenu  li:hover{opacity:1;}
+#mymenu  a:hover{color:#FFF; opacity:1;}
+
+
+
+
+/****  Animating token  **********************************/
+
+
+/****  Animating cards  **********************************/
+
+.card-on-deck{
+	position:absolute; 
+	top:186px; 
+	left:106px; 
+	-webkit-transform:rotate(-10deg);
+	-webkit-transition: top 500ms ease-in-out, left 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.card-spot-00{top:400px; left:400px; -webkit-transform:rotate(-185deg);}
+.card-spot-01{top:400px; left:500px; -webkit-transform:rotate( 185deg);}
+
+.card-spot-10{top:-40px; left:400px; -webkit-transform:rotate( 185deg);}
+.card-spot-11{top:-40px; left:500px; -webkit-transform:rotate(-185deg);}
+
+.card-spot-20{top:180px; left:240px; -webkit-transform:rotate( 0deg);}
+.card-spot-21{top:180px; left:350px; -webkit-transform:rotate( 0deg);}
+.card-spot-22{top:180px; left:460px; -webkit-transform:rotate( 0deg);}
+.card-spot-23{top:180px; left:570px; -webkit-transform:rotate( 0deg);}
+.card-spot-24{top:180px; left:680px; -webkit-transform:rotate( 0deg);}
+
+
+
+
+/****  Animating chips  **********************************/
+
+.chip-to-move{
+	-webkit-transition: top 600ms ease-in-out, left 600ms ease-in-out;
+	box-shadow:none;
+}
+
+.chip-to-pot0{
+	top  : 250px;
+	left : 860px;
+}
+
+.chip-to-pot1{
+	top  : 200px;
+	left : 860px;
+}
+
+
+
+
+/****  End of program  ***********************************/

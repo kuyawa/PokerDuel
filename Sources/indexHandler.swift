@@ -2,14 +2,15 @@ import Kitura
 import LoggerAPI
 
 class IndexHandler {
-	func index(request: RouterRequest, response: RouterResponse, next: @escaping () -> Void) throws {
-		defer { next() }
 
- 		print("GET - /index route handler...")
- 		Log.debug("GET - /index route handler...")
+    func index(request: RouterRequest, response: RouterResponse, next: @escaping () -> Void) throws {
+        defer { next() }
 
- 		let data = ["test": "hello world > test"]
+        //print("GET - /index route handler...")
+        //Log.debug("GET - /index route handler...")
 
-	    try response.render("index", context: data)
+        let data = ["test": "hello world"]
+        try response.render("index", context: data)
 	}
+
 }

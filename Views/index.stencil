@@ -3,11 +3,15 @@
 <head>
     <meta charset="utf-8">
 	<title>PokerDuel</title>
-    <link rel="stylesheet" type="text/css" href="/public/styles/default-theme.css">
+    <link rel="stylesheet" type="text/css" href="/public/styles/default.css">
 </head>
 <body>
-	<h1>Hello from PokerDuel!</h1>
-	<h2>Test: <a href="/test">{{ test }}</a></h2>
-	<h2>Test: {{ test | time }}</h2>
+  <div class="hero">
+    <a class="button-play" href="play"><img src="/public/images/buttonplay.png"/></a>
+  </div>
+  <div class="info">
+    <p>PokerDuel is a Texas Hold'em Poker game to practice your skills against the computer.<br>
+       There is no real betting in this game. Play safely, play for fun.</p>
+  </div>
 </body>
 </html>

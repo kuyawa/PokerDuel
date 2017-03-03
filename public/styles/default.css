@@ -1,0 +1,17 @@
+/* Default theme */
+
+html, body { 
+  margin: 0; 
+  padding: 0; 
+  color: #333; 
+  background: #FFF;
+  font: 300 1em/1.4 'helvetica neue', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 { font-weight: 300; }
+
+.hero { height: 500px; text-align: center; background: #3B5630 url(/public/images/pokerduel.png) center no-repeat; }
+.button-play { display: inline-block; width: 273px; margin-top: 350px; padding: 5px 40px; border-radius: 40px; }
+.button-play:hover { background-color: rgba(0,0,0,.2); /*opacity: 0.6;*/ }
+
+.info { padding: 50px 0; text-align: center; font-size: 1.5em; }

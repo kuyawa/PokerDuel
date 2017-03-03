@@ -2,14 +2,16 @@ import Kitura
 import LoggerAPI
 
 class TestHandler {
-	func show(request: RouterRequest, response: RouterResponse, next: @escaping () -> Void) throws {
-		defer { next() }
 
- 		print("GET - /test route handler...")
- 		Log.debug("GET - /test route handler...")
+    func show(request: RouterRequest, response: RouterResponse, next: @escaping () -> Void) throws {
+        defer { next() }
 
-		let data = ["test": "hello world > index"]
+        //print("GET - /test route handler...")
+        //Log.debug("GET - /test route handler...")
 
-	    try response.render("test", context: data)
-	}
+        let data = ["test": "hello world"]
+
+        try response.render("test", context: data)
+    }
+
 }

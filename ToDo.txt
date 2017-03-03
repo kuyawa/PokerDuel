@@ -9,19 +9,22 @@ TODO:
 - Fake money, $1000 to start
 
 
-VERSION 2
-- Buy money with bitcoin
-
 
 ----
 
 git remote heroku to https://git.heroku.com/pokerduel.git
 
 Files needed locally:
-  .swift:version << 3.0.2
-  Procfile << web: .build/release/pokerduel
+  .swift-version << 3.0.2
+  Procfile << web: pokerduel
 
 On Heroku Dashboard/Settings
   add buildpack: https://github.com/kylef/heroku-buildpack-swift
-  
-  
+
+From terminal:
+  git push heroku master
+  heroku ps:scale web=1
+
+Run on browser https://pokerduel.herokuapp.com/
+
+----
