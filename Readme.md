@@ -38,6 +38,6 @@ This are the steps to have any web page up and running with Kitura on Heroku:
 * If it won't run we may need to do a final step on our free server gently provided by Heroku
 * $ heroku ps:scale web=1
 * That's it, our app should be up and running
-* Head over to http://pokerfight.herokuapp.com and marvel
+* Head over to http://pokerfight.herokuapp.com and marvel (not this one, the one you created)
 
 Questions? Let me know...
