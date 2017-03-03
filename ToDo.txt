@@ -1,8 +1,8 @@
 TODO:
 
-- Learn Kitura
-- Main page a huge hero
-- Button to GO PLAY
+x Learn Kitura
+x Main page a huge hero
+x Button to GO PLAY
 - Show playing tables
 - New Table or seat on open table
 - Chat rooms
